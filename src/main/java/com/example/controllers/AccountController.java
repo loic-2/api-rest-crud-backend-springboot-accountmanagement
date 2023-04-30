@@ -48,7 +48,6 @@ public class AccountController {
 
     @PostMapping
     public ResponseEntity<Response> saveAccount(@RequestBody RequestDto requestDto){
-        System.out.println(requestDto.toString());
         return new ResponseEntity<Response>(this.accountServiceimpl.addAccount(MapDto.RequestDtoToAccount(requestDto)), HttpStatus.CREATED);
     }
 

@@ -26,7 +26,6 @@ public class MapDto {
         account.setLastName(requestDto.getPrenom());
         account.setCin(requestDto.getCni());
         account.setId(requestDto.getId());
-        System.out.println(account.toString());
         return account;
     }
 }
